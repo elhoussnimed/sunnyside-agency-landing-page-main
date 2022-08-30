@@ -1,6 +1,8 @@
-const mobileMenu = document.querySelector("header nav ul");
-const menuIcon = document.querySelector("header nav .mobile-list");
+const menuList = document.querySelector("header nav ul");
+const icone = document.querySelector("header nav .mobile-list");
 
-menuIcon.onclick = () => {
-  mobileMenu.classList.toggle("list-display");
-};
+function showMenu() {
+  menuList.classList.toggle("list-display");
+}
+
+icone.addEventListener("click", showMenu);

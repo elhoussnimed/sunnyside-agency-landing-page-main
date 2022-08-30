@@ -362,7 +362,8 @@ footer .social-icons a:hover i {
     display: flex;
 }
 
-@media (hover: hover) {
+/* Create Hover Effect In Large Screen  */
+@media (min-width: 768px) {
     header nav ul li:last-child:hover {
         background-color: rgba(255, 255, 255, 0.5);
     }
@@ -375,9 +376,10 @@ footer .social-icons a:hover i {
     .audience .audience-content a:hover::before {
         opacity: 1;
     }
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         grid-template-columns: 1fr;
     }
@@ -395,6 +397,7 @@ footer .social-icons a:hover i {
 
     header {
         background-position-x: center;
+        padding: 40px 15px;
     }
 
     header nav {
@@ -455,7 +458,7 @@ footer .social-icons a:hover i {
     }
 
     header h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .brand,
@@ -468,11 +471,17 @@ footer .social-icons a:hover i {
         width: 100%;
     }
 
-    .brand .brand-content, 
+    .brand .brand-content,
     .audience .audience-content {
-        padding: 100px;
+        padding: 50px;
     }
-    
+
+    .brand .brand-content h2,
+    .audience .audience-content h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
     .brand .brand-content {
         order: 2;
     }
@@ -483,6 +492,11 @@ footer .social-icons a:hover i {
 
     .creativity>div {
         width: 100%;
+    }
+
+    .creativity .graphic-design,
+    .creativity .photography {
+        background-position-x: center;
     }
 
     .creativity>div p {
@@ -503,5 +517,9 @@ footer .social-icons a:hover i {
 
     .gallery img {
         max-width: 50%;
+    }
+
+    .attribution {
+        font-size: 10px;
     }
 }
